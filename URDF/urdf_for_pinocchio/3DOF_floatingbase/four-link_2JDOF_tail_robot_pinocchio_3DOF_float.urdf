@@ -1,0 +1,233 @@
+<?xml version="1.0" ?>
+
+<robot name = "tail_robot">
+    <link name = "ground">
+        <inertial>
+            <origin xyz = "0 0 0" rpy = "0 0 0" />
+            <mass value = "0"/>
+            <inertia ixx = "0" ixy = "0" ixz = "0" iyy = "0" iyz = "0" izz = "0"/>
+        </inertial>
+    </link>
+
+    <link name = "pitchlink">
+        <inertial>
+            <origin xyz = "0 0 0" rpy = "0 0 0" />
+            <mass value = "0"/>
+            <inertia ixx = "0" ixy = "0" ixz = "0" iyy = "0" iyz = "0" izz = "0"/>
+        </inertial>
+    </link>
+
+    <link name = "rolllink">
+        <inertial>
+            <origin xyz = "0 0 0" rpy = "0 0 0" />
+            <mass value = "0"/>
+            <inertia ixx = "0" ixy = "0" ixz = "0" iyy = "0" iyz = "0" izz = "0"/>
+        </inertial>
+    </link>
+    
+    <link name = "torso">
+        <inertial>
+            <origin xyz = "0 0 0" rpy = "0 0 0" />
+			<mass value = "5" />
+            <inertia ixx = "0.454166666666667" iyy = "0.075" izz = "0.454166666666667" ixy = "0" ixz = "0" iyz = "0" />
+        </inertial>
+        <visual>
+			<origin xyz = "0 0 0" />
+			<geometry>
+                <box size = "0.3 1 0.3" />
+			</geometry>
+			<material name = "torso_material">
+				<color rgba = "0.75 0.75 0.75 1" />
+			</material>
+		</visual>
+    </link>
+
+    <link name = "taillink1_vir1">
+        <inertial>
+            <origin xyz = "0 0 0" rpy = "0 0 0" />
+            <mass value = "0"/>
+            <inertia ixx = "0" ixy = "0" ixz = "0" iyy = "0" iyz = "0" izz = "0"/>
+        </inertial>
+    </link>
+
+    <link name = "taillink1">
+        <inertial>
+            <origin xyz = "0 0.1875 0" rpy = "0 0 0" />
+            <mass value = "0.75" />
+            <inertia ixx = "0.0094140625" iyy = "0.00125" izz = "0.0094140625" ixy = "0" ixz = "0" iyz = "0" />
+        </inertial>
+        <visual>
+            <origin xyz = "0 0.1875 0" />
+            <geometry>
+                <box size = "0.1 0.375 0.1" />
+            </geometry>
+            <material name = "tail_material">
+                <color rgba = "0.75 0.75 0.75 1" />
+            </material>
+        </visual>
+    </link>
+
+    <link name = "taillink2_vir1">
+        <inertial>
+            <origin xyz = "0 0 0" rpy = "0 0 0" />
+            <mass value = "0"/>
+            <inertia ixx = "0" ixy = "0" ixz = "0" iyy = "0" iyz = "0" izz = "0"/>
+        </inertial>
+    </link>
+
+    <link name = "taillink2">
+        <inertial>
+            <origin xyz = "0 0.1875 0" rpy = "0 0 0" />
+            <mass value = "0.75" />
+            <inertia ixx = "0.0094140625" iyy = "0.00125" izz = "0.0094140625" ixy = "0" ixz = "0" iyz = "0" />
+        </inertial>
+        <visual>
+            <origin xyz = "0 0.1875 0" />
+            <geometry>
+                <box size = "0.1 0.375 0.1" />
+            </geometry>
+            <material name = "tail_material">
+                <color rgba = "0.75 0.75 0.75 1" />
+            </material>
+        </visual>
+    </link>
+
+    <link name = "taillink3_vir1">
+        <inertial>
+            <origin xyz = "0 0 0" rpy = "0 0 0" />
+            <mass value = "0"/>
+            <inertia ixx = "0" ixy = "0" ixz = "0" iyy = "0" iyz = "0" izz = "0"/>
+        </inertial>
+    </link>
+
+    <link name = "taillink3">
+        <inertial>
+            <origin xyz = "0 0.1875 0" rpy = "0 0 0" />
+            <mass value = "0.75" />
+            <inertia ixx = "0.0094140625" iyy = "0.00125" izz = "0.0094140625" ixy = "0" ixz = "0" iyz = "0" />
+        </inertial>
+        <visual>
+            <origin xyz = "0 0.1875 0" />
+            <geometry>
+                <box size = "0.1 0.375 0.1" />
+            </geometry>
+            <material name = "tail_material">
+                <color rgba = "0.75 0.75 0.75 1" />
+            </material>
+        </visual>
+    </link>
+
+    <link name = "taillink4_vir1">
+        <inertial>
+            <origin xyz = "0 0 0" rpy = "0 0 0" />
+            <mass value = "0"/>
+            <inertia ixx = "0" ixy = "0" ixz = "0" iyy = "0" iyz = "0" izz = "0"/>
+        </inertial>
+    </link>
+
+    <link name = "taillink4">
+        <inertial>
+            <origin xyz = "0 0.1875 0" rpy = "0 0 0" />
+            <mass value = "0.75" />
+            <inertia ixx = "0.0094140625" iyy = "0.00125" izz = "0.0094140625" ixy = "0" ixz = "0" iyz = "0" />
+        </inertial>
+        <visual>
+            <origin xyz = "0 0.1875 0" />
+            <geometry>
+                <box size = "0.1 0.375 0.1" />
+            </geometry>
+            <material name = "tail_material">
+                <color rgba = "0.75 0.75 0.75 1" />
+            </material>
+        </visual>
+    </link>
+
+    <joint name = "ground_torso_Rx" type = "revolute">
+        <parent link = "ground" />
+        <child link = "pitchlink" />
+        <origin xyz = "0 0 0" />
+        <axis xyz = "1 0 0" />
+        <limit effort="10000" lower="-10000" upper="10000" velocity="10000"/>
+    </joint>
+
+    <joint name = "ground_torso_Ry" type = "revolute">
+        <parent link = "pitchlink" />
+        <child link = "rolllink" />
+        <origin xyz = "0 0 0" />
+        <axis xyz = "0 1 0" />
+        <limit effort="10000" lower="-10000" upper="10000" velocity="10000"/>
+    </joint>    
+
+    <joint name = "ground_torso_Rz" type = "revolute">
+        <parent link = "rolllink" />
+        <child link = "torso" />
+        <origin xyz = "0 0 0" />
+        <axis xyz = "0 0 1" />
+        <limit effort="10000" lower="-10000" upper="10000" velocity="10000"/>
+    </joint> 
+
+    <joint name = "torso_taillink1_Rx" type = "revolute">
+        <parent link = "torso" />
+        <child link = "taillink1_vir1" />
+		<origin xyz = "0 0.5 0" />
+		<axis xyz = "1 0 0 " />
+        <limit effort="10000" lower="-10000" upper="10000" velocity="10000"/>
+    </joint>
+
+     <joint name = "torso_taillink1_Rz" type = "revolute">
+        <parent link = "taillink1_vir1" />
+        <child link = "taillink1" />
+		<origin xyz = "0 0 0" />
+		<axis xyz = "0 0 1 " />
+        <limit effort="10000" lower="-10000" upper="10000" velocity="10000"/>
+    </joint>
+
+    <joint name = "taillink1_taillink2_Rx" type = "revolute">
+        <parent link = "taillink1" />
+        <child link = "taillink2_vir1" />
+        <origin xyz = "0 0.375 0" />
+        <axis xyz = "1 0 0 " />
+        <limit effort="10000" lower="-10000" upper="10000" velocity="10000"/>
+    </joint>
+
+     <joint name = "taillink1_taillink2_Rz" type = "revolute">
+        <parent link = "taillink2_vir1" />
+        <child link = "taillink2" />
+        <origin xyz = "0 0 0" />
+        <axis xyz = "0 0 1 " />
+        <limit effort="10000" lower="-10000" upper="10000" velocity="10000"/>
+    </joint>
+
+    <joint name = "taillink2_taillink3_Rx" type = "revolute">
+        <parent link = "taillink2" />
+        <child link = "taillink3_vir1" />
+        <origin xyz = "0 0.375 0" />
+        <axis xyz = "1 0 0 " />
+        <limit effort="10000" lower="-10000" upper="10000" velocity="10000"/>
+    </joint>
+
+     <joint name = "taillink2_taillink3_Rz" type = "revolute">
+        <parent link = "taillink3_vir1" />
+        <child link = "taillink3" />
+        <origin xyz = "0 0 0" />
+        <axis xyz = "0 0 1 " />
+        <limit effort="10000" lower="-10000" upper="10000" velocity="10000"/>
+    </joint>
+
+    <joint name = "taillink3_taillink4_Rx" type = "revolute">
+        <parent link = "taillink3" />
+        <child link = "taillink4_vir1" />
+        <origin xyz = "0 0.375 0" />
+        <axis xyz = "1 0 0 " />
+        <limit effort="10000" lower="-10000" upper="10000" velocity="10000"/>
+    </joint>
+
+     <joint name = "taillink3_taillink4_Rz" type = "revolute">
+        <parent link = "taillink4_vir1" />
+        <child link = "taillink4" />
+        <origin xyz = "0 0 0" />
+        <axis xyz = "0 0 1 " />
+        <limit effort="10000" lower="-10000" upper="10000" velocity="10000"/>
+    </joint>
+
+</robot>
